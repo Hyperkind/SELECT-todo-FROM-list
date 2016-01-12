@@ -71,3 +71,6 @@ VALUES ('mistake 2', 'another test entry');
 -- xii create a new task
 INSERT INTO tasks (title, description)
 VALUES ('third mistake', 'another test entry');
+-- xiii select title fields of all tasks with a tile that includes the word 'mistake'
+SELECT title FROM tasks
+WHERE title LIKE '%mistake%';
