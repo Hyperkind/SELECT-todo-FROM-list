@@ -38,9 +38,9 @@ ADD COLUMN completed_at timestamp NULL default NULL;
 -- iii. change the updated_at column to not allow NULL values,
 -- and have a default value of now()
 ALTER TABLE tasks
-  ALTER COLUMN updated_at SET NOT NULL;
+ALTER COLUMN updated_at SET NOT NULL;
 ALTER TABLE tasks
-  ALTER COLUMN updated_at SET DEFAULT NOW();
+ALTER COLUMN updated_at SET DEFAULT NOW();
 -- iv. create a new task, only by setting values
 -- (not defining which columns)
 INSERT INTO tasks
@@ -83,3 +83,6 @@ WHERE title LIKE '%mistake%';
 -- xvi delete all tasks that includes the word 'mistake' in the title
 DELETE FROM tasks
 WHERE title LIKE '%mistake%';
+-- xvii select all fields of all tasks sorted by title in ascending order
+SELECT * FROM tasks
+ORDER BY title ASC;
