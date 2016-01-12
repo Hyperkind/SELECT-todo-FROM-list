@@ -51,3 +51,10 @@ VALUES ('Study PostgreSQL', 'Read all the documentation');
 -- vi select all the titles of tasks that are not yet completed
 SELECT title FROM tasks
 Where completed_at IS NULL;
+-- vii update the task with a title of 'Study SQL' to be completed as of now
+UPDATE tasks SET completed_at = NOW()
+WHERE title='Study SQL';
+-- viii select all titles and descriptions of tasks that are
+-- not yet completed
+SELECT title FROM tasks
+Where completed_at IS NULL;
