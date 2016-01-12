@@ -62,3 +62,12 @@ Where completed_at IS NULL;
 -- date in descending order
 SELECT * FROM tasks
 ORDER BY created_at DESC;
+-- x create a new task
+INSERT INTO tasks (title, description)
+VALUES ('mistake 1', 'a test entry');
+-- xi create a new task
+INSERT INTO tasks (title, description)
+VALUES ('mistake 2', 'another test entry');
+-- xii create a new task
+INSERT INTO tasks (title, description)
+VALUES ('third mistake', 'another test entry');
