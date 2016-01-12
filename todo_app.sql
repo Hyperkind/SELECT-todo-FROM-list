@@ -74,3 +74,6 @@ VALUES ('third mistake', 'another test entry');
 -- xiii select title fields of all tasks with a tile that includes the word 'mistake'
 SELECT title FROM tasks
 WHERE title LIKE '%mistake%';
+-- xiv delete the task that has a title of mistake 1
+DELETE FROM tasks
+WHERE title= 'mistake 1';
