@@ -49,3 +49,5 @@ VALUES (DEFAULT, 'Study SQL', 'Complete this exercise', now(), now(), NULL);
 INSERT INTO tasks (title, description)
 VALUES ('Study PostgreSQL', 'Read all the documentation');
 -- vi select all the titles of tasks that are not yet completed
+SELECT title FROM tasks
+Where completed_at IS NULL;
